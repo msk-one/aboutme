@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Michael Szklarski - CV</title>
+    <style>
+        /* Previous styles remain the same */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            font-size: 0.8rem;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #3B82F6;
+            border-radius: 2px;
+        }
+
+        .profile-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Rest of the previous styles */
+        .experience-card {
+            border-left: 3px solid #3B82F6;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: #3B82F6;
+        }
+
+        @media print {
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            .experience-card, .section-title::after {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        .skill-tag {
+            background: #EEF2FF;
+            color: #3B82F6;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.25rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 p-8 max-w-5xl mx-auto">
+    <!-- Header Section -->
+    <header class="mb-12 border-b pb-8">
+        <div class="flex justify-between items-start gap-8">
+            <div class="flex-1">
+                <h1 class="text-4xl font-bold text-gray-900 mb-3">Michael Szklarski</h1>
+                <h2 class="text-xl text-blue-600 font-light mb-4">Technical Founder, Architect & IT Strategist</h2>
+                <h2 class="text-xl text-blue-600 font-light mb-4">...and also a guy that trained custom LLM model to output this CV</h2>
+                <div class="text-gray-600 space-y-1">
+                    <p class="flex items-center gap-2">
+                        <span class="w-4 h-4 inline-block bg-blue-600 rounded-full"></span>
+                        Foster City, Bay Area, CA
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="w-4 h-4 inline-block bg-blue-600 rounded-full"></span>
+                        +1 (669) 204-5933
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="w-4 h-4 inline-block bg-blue-600 rounded-full"></span>
+                        msk.sk.one@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="flex-shrink-0">
+                <img src="michal_szklarski.jpeg" alt="Michal Szklarski" class="profile-image w-48 h-48 object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- Summary section -->
+    <section class="mb-12">
+        <p class="text-base text-gray-700 leading-relaxed font-light">
+            Experienced Technical Founder, IT Strategist, Product Manager, and Architect with over 9 years of experience in software development, architecture, game development,and digital innovation. Successfully led digital transformations for leading retail chains, managed mobile application development for popular platforms, and founded a startup, securing significant funding. Specializing in entrepreneurship, decision-making, and project management, excelling in developing strategic plans, building effective teams, and delivering modern solutions for both startups and corporate organizations.
+        </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="mb-12">
+        <h2 class="section-title text-xl font-bold text-gray-900">Skills</h2>
+        <div class="mt-4 flex flex-wrap gap-2">
+            <span class="skill-tag">IT Systems Architecture & Analytics</span>
+            <span class="skill-tag">Product Design</span>
+            <span class="skill-tag">Project/Program Management</span>
+            <span class="skill-tag">IT Area Ownership</span>
+            <span class="skill-tag">Decision Making</span>
+            <span class="skill-tag">Team Management</span>
+            <span class="skill-tag">Google Cloud</span>
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">AI/Custom LLM Model Training</span>
+            <span class="skill-tag">R&D</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">API/Integrations</span>
+            <span class="skill-tag">Business Development</span>
+            <span class="skill-tag">Game Development</span>
+            <span class="skill-tag">Game Design</span>
+            <span class="skill-tag">Unity & Unreal</span>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="mb-12">
+        <h2 class="section-title text-2xl font-bold text-gray-900">Professional Experience</h2>
+        
+        <!-- ReadyCode -->
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Co-founder, COO | ReadyCode</h3>
+                <span class="text-blue-600 font-medium">2022 - Present</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">San Francisco, CA / Remote</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Built and led the product-technical team implementing the company's vision</li>
+                <li>• Led product development resulting in new B2C line for multiplayer games</li>
+                <li>• Developed business plan and secured initial capital (750k USD) from investors</li>
+                <li>• Created strategic partnerships with key industry stakeholders</li>
+                <li>• Represented company at industry events, increasing B2B leads by 500%</li>
+                <li>• Increased company revenue by 300% through effective product and marketing strategies</li>
+            </ul>
+        </div>
+
+        <!-- d2qube -->
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Co-founder, CSO | d2qube</h3>
+                <span class="text-blue-600 font-medium">2021 - 2024</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">San Francisco, CA / Remote</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Developed long-term strategic plan increasing company's market share by 20%</li>
+                <li>• Collaborated with key external stakeholders on launching new GTA V projects</li>
+                <li>• Leading team developing custom (Lua, C#, Python, Java) game modes for GTA V, Fortnite, Roblox, and Minecraft</li>
+            </ul>
+        </div>
+
+        <!-- Additional Experience entries -->
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Managing Director | e-point</h3>
+                <span class="text-blue-600 font-medium">February 2021 - April 2022</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw, PL / Remote</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Leading team of 8 people, acquired, developed, and maintained projects for 5+ customers in retail, e-commerce, services, and fintech</li>
+                <li>• Developed and implemented a strategic plan that increased revenues by 150% in one year</li>
+                <li>• Developed and maintained effective relationships with vendors, resulting in cost savings of 25%</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Director of R&D | e-point</h3>
+                <span class="text-blue-600 font-medium">March 2020 - December 2021</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw, PL / Remote</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Led R&D in the company: innovation development, mobile solutions/services, project onboarding, and business development with consulting</li>
+                <li>• Improved operational efficiency by 35% through process optimization</li>
+                <li>• Led and coordinated a cross-functional team of 8 solutions architects to successfully deliver 10+ projects on time and within budget</li>
+                <li>• Monitored team performance, identified areas of weaknesses, and provided timely interventions to ensure targets were met</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Head of Digital Solutions | e-point</h3>
+                <span class="text-blue-600 font-medium">October 2018 - February 2020</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Introduced first Trusted Web Activity (TWA) live deployment in Europe for morele.net mobile e-commerce (TypeScript, Java)</li>
+                <li>• Spearheaded transformation focus on introducing technologies/standards such as PWA, TWA, AMP, and Payment Request API</li>
+                <li>• Collaborated with cross-functional teams to ensure technology stack and product alignment with customer's goals and objectives</li>
+                <li>• Researched and identified emerging trends in WWW and mobile to inform stakeholders and debate strategy decisions</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Technical Product Owner | e-point</h3>
+                <span class="text-blue-600 font-medium">March 2018 - February 2020</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Conducted market research to identify e-commerce customer trends and competitors, resulting in a 70% increase in market share</li>
+                <li>• Deployed live on production environment a predecessor of Vue Storefront (YC-backed), e2m storefront focused on enterprise customers (SAP, Adobe, Shopify Plus)</li>
+                <li>• Developed a roadmap that managed the product lifecycle, resulting in a 200% increase in product sales and revenue</li>
+                <li>• Developed detailed product specifications and user stories to ensure product quality and usability</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Solutions Architect | e-point</h3>
+                <span class="text-blue-600 font-medium">November 2017 - October 2018</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Developed a Service-Oriented Architecture (SOA) that improved system performance and availability for enterprise-grade customer</li>
+                <li>• Implemented a microservices layout that reduced dependencies between components and improved scalability for 2000+ store retail business</li>
+                <li>• Developed an API gateway (Java, Spring) that provided secure access to enterprise data for 8 internal company products</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">Junior IT Architect | e-point</h3>
+                <span class="text-blue-600 font-medium">July 2016 - October 2017</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Implemented new delivery methods, onboarding processes, and changes caused by various regulations in the EU/Asia for company customers like Amway Group</li>
+                <li>• Documented database (ERD) schemas and procedures in SQL, allowing for faster knowledge transfer</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold text-gray-800">IT Security Officer | Rivet Group</h3>
+                <span class="text-blue-600 font-medium">May 2015 - November 2015</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">Warsaw</p>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li>• Conducted 5+ security audits to identify and address vulnerabilities in IT systems and mobile apps, resulting in improved system security</li>
+                <li>• Developed and implemented a comprehensive internal Linux distro (C++, Bash, Python) that reduced the organization's security audit performance by 65%</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="mb-12">
+        <h2 class="section-title text-2xl font-bold text-gray-900">Education</h2>
+        <div class="bg-gray-50 p-6 rounded-lg flex items-start gap-6">
+            <img src="wut.png" alt="Warsaw University of Technology" class="w-16 h-16 object-contain flex-shrink-0">
+            <div>
+                <h3 class="text-xl font-bold text-gray-800">Warsaw University of Technology</h3>
+                <p class="text-blue-600">2013 - 2018</p>
+                <p class="text-gray-700">Computer Science</p>
+                <ul class="mt-4 space-y-2 text-gray-700 text-sm">
+                    <li>• Co-organized 3 major Warsaw Days of Computer Science (WDI) conferences, each attracting 5000+ participants from industry and academia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Activities section -->
+    <section class="mb-12">
+        <h2 class="section-title text-2xl font-bold text-gray-900">Extra Activities</h2>
+        <div class="bg-gray-50 p-6 rounded-lg flex items-start gap-6">
+            <img src="wgde.png" alt="Google Developers Expert" class="w-16 h-16 object-contain flex-shrink-0">
+            <div>
+                <h3 class="text-xl font-bold text-gray-800">Google Developers Expert (GDE)</h3>
+                <p class="text-blue-600">October 2021 - December 2023</p>
+                <ul class="mt-4 space-y-2 text-gray-700 text-sm">
+                    <li>• Significant contribution to web technologies adoption and understanding, focusing on PWA, Web Performance Optimization, and modern JavaScript frameworks</li>
+                    <li>• Delivered 10+ technical talks at international conferences</li>
+                    <li>• Authored 5+ in-depth articles and tutorials</li>
+                    <li>• Mentored developers worldwide</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <!-- Languages with visual representation -->
+        <section class="mb-12">
+            <h2 class="section-title text-2xl font-bold text-gray-900">Languages</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="font-medium">English - nearly native</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 99%"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium">Polish - native</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-medium">German - basic</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Certifications with badge style -->
+        <section class="mb-12">
+            <h2 class="section-title text-2xl font-bold text-gray-900">Certifications</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="border border-gray-200 rounded-lg p-4 flex items-center gap-4">
+                    <img src="gcp.png" alt="Google Cloud Digital Leader" class="w-16 h-16 object-contain flex-shrink-0">
+                    <div>
+                        <h3 class="font-medium text-gray-900">Cloud Digital Leader</h3>
+                        <p class="text-blue-600">Google, 2022</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-4 flex items-center gap-4">
+                    <img src="az.webp" alt="Microsoft Azure Fundamentals" class="w-16 h-16 object-contain flex-shrink-0">
+                    <div>
+                        <h3 class="font-medium text-gray-900">Azure Fundamentals</h3>
+                        <p class="text-blue-600">Microsoft, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Social Links section -->
+    <footer class="border-t pt-8">
+        <h2 class="section-title text-2xl font-bold text-gray-900">Social Profiles</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <a href="https://linkedin.com/in/michalszklarski" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+            <a href="https://medium.com/@mszklarski" class="text-blue-600 hover:text-blue-800">Medium</a>
+            <a href="https://www.youtube.com/results?search_query=Michal+szklarski" class="text-blue-600 hover:text-blue-800">YouTube</a>
+            <a href="https://open.spotify.com/episode/0aRrTEbxZXHGm1md18UdDF" class="text-blue-600 hover:text-blue-800">Spotify Podcast</a>
+            <a href="https://www.forbes.pl/biznes/readycode-modyfikatorzy-wymyslonej-rzeczywistosci/1byf3wl" class="text-blue-600 hover:text-blue-800">Forbes</a>
+        </div>
+    </footer>
+</body>
+</html>
